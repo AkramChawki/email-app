@@ -1,3 +1,5 @@
+import React from 'react'
+
 interface NavItemProps {
     children: React.ReactNode
     active?: boolean

@@ -1,8 +1,8 @@
+import React from 'react'
+
 interface EmailsListProps {
     children: React.ReactNode
 }
-
-
 
 function EmailsList({ children }: EmailsListProps) {
     return (

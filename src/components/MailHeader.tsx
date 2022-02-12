@@ -1,3 +1,5 @@
+import React from 'react'
+
 interface MailHeaderProps {
     image: string
     fullName: string

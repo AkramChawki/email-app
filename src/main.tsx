@@ -4,6 +4,7 @@ import './index.css'
 import App from './App'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { AppContextProvider } from './AppContext'
+import 'simplebar/dist/simplebar.min.css';
 
 const queryClient = new QueryClient();
 

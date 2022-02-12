@@ -1,3 +1,5 @@
+import React from 'react'
+
 interface TagsListProps {
     children: React.ReactNode
 }

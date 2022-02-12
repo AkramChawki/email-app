@@ -1,5 +1,5 @@
 import React from 'react'
-import { Scrollbars} from 'react-custom-scrollbars'
+import SimpleBar from 'simplebar-react';
 import SearchInput from '../components/SearchInput'
 import EmailsList from '../components/EmailList'
 import EmailsListItem from '../components/EmailListItem'
@@ -15,7 +15,7 @@ function MailFeed() {
     <div className='h-full '>
       <SearchInput />
       <EmailsList>
-        <Scrollbars className='email-list-height' autoHide>
+        <SimpleBar style={{ height: "calc(100vh - 60px)" }}>
         { filtredEmails && filtredEmails.map((email, i) => (
         <AnimatedEmailsListItem
          initial={{y: -50, opacity: 0}}
@@ -24,7 +24,7 @@ function MailFeed() {
          email={email}
          key={email.id}/>
         ))}
-        </Scrollbars>
+        </SimpleBar>
       </EmailsList>
     </div>
   )

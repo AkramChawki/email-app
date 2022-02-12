@@ -1,3 +1,5 @@
+import React from 'react'
+
 interface UserAvatarProps {
     image: string
     onClick?: React.MouseEventHandler<HTMLDivElement>

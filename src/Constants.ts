@@ -1,1 +1,1 @@
-export const __URL__ = "";
+export const __URL__ = "/email-app";

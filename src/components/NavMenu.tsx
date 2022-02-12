@@ -1,7 +1,8 @@
+import React from 'react'
+
 interface NavMenuProps {
     children: React.ReactNode
 }
-
 
 function NavMenu({ children }: NavMenuProps) {
     return (

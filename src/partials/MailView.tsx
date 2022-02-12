@@ -1,5 +1,5 @@
 import React from 'react'
-import { Scrollbars } from 'react-custom-scrollbars'
+import SimpleBar from 'simplebar-react';
 import { Link, useParams } from 'react-router-dom'
 import { useGetEmail } from '../AppContext'
 import { HDotsIcon, InfoIcon, LeftArrowIcon, ReplyIcon, RightArrowIcon, TrashIcon } from '../components/icons'
@@ -46,7 +46,7 @@ function MailView() {
         <MailViewActionButton icon={<HDotsIcon />} onClick={HandleClick} />
         <UserAvatar image="https://i.pravatar.cc/150?img=3" onClick={HandleClick} />
       </MailViewAction>
-      <Scrollbars style={{ height: "calc(100vh - 60px)" }} autoHide>
+      <SimpleBar style={{ height: "calc(100vh - 60px)" }} >
         <MailContent>
           <MailHeader
             image={'https://i.pravatar.cc/150?img=' + email.id}
@@ -56,7 +56,7 @@ function MailView() {
           <MailBody content={email.content} />
         </MailContent>
 
-      </Scrollbars>
+      </SimpleBar>
 
     </motion.div>
   ) : <NoEmailsView />

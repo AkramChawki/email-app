@@ -1,3 +1,5 @@
+import React from 'react'
+
 interface MailViewActionButtonProps {
     icon: JSX.Element;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;

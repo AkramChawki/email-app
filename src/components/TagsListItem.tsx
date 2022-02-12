@@ -1,3 +1,5 @@
+import React from 'react'
+
 interface TagsListItemProps {
     children: React.ReactNode
     color: string
