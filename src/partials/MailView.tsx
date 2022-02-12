@@ -12,7 +12,6 @@ import MailViewActionButton from '../components/MailViewActionButton'
 import UserAvatar from '../components/UserAvatar'
 import NoEmailsView from './NoEmailsView'
 import { motion } from 'framer-motion'
-import { __URL__ } from '../Constants'
 
 
 function MailView() {
@@ -34,12 +33,12 @@ function MailView() {
         <MailViewActionButton icon={<TrashIcon />} onClick={HandleClick} />
         <MailViewActionButton icon={<InfoIcon />} onClick={HandleClick} />
         {email.id > 1 && (
-          <Link to={__URL__ + "/email/" + (email.id - 1)}>
+          <Link to={"/email/" + (email.id - 1)}>
             <MailViewActionButton icon={<LeftArrowIcon />} onClick={HandleClick} />
           </Link>
         )}
         {email.id < 20 && (
-          <Link to={__URL__ + "/email/" + (email.id + 1)}>
+          <Link to={"/email/" + (email.id + 1)}>
             <MailViewActionButton icon={<RightArrowIcon />} onClick={HandleClick} />
           </Link>
         )}

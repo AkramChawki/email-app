@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { __URL__ } from './Constants'
 import MailFeed from './partials/MailFeed'
 import MailView from './partials/MailView'
 import NoEmailsView from './partials/NoEmailsView'
@@ -18,7 +17,7 @@ function App() {
         </div>
         <div className='col-span-7 border-l border-l-gray-200'>
           <Routes>
-            <Route path={__URL__}>
+            <Route path="/">
               <Route index element={<NoEmailsView />}/>
               <Route path='/email' element={<NoEmailsView />}/>
               <Route path='/email/:id' element={<MailView />}/>
