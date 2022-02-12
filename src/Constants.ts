@@ -1,0 +1,1 @@
+export const __URL__ = "/email-app";

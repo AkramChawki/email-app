@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus{
+    outline: none;
+}
+
+.email-view-content-height, .email-list-height{
+    min-height: calc(100vh - 60px);
+}
