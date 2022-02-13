@@ -22,7 +22,7 @@ This is an implementation of this [dribble shot](https://dribbble.com/shots/2597
 
 ### Links
 
-- Live Site URL: [visite site](https://AkramChawki.github.io/email-app)
+- Live Site URL: [visite site](https://akramchawki-emailapp.netlify.app)
 
 
 ### Built with
